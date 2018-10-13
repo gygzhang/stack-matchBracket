@@ -1,14 +1,16 @@
 #include"stack.h"
-#
+#include"lineEdit.h"
 #include<Windows.h>
 
 int main() {
 	SStack s;
 	InitializeStack(&s);
 	char p[500];
-
+	//puts(line_edit("123#qqqsss"));
+	//可以测试行编辑
+	printf("%s\n", line_edit("##@123q@qqsssss111s#111##333"));
 	
-
+	//可以测试括号匹配
 	/*fgets(p,2048,stdin);
 	//去掉fgets()留存的回车
 	bracket_trim(p);

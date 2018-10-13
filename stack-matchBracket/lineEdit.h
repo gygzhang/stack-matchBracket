@@ -1,4 +1,4 @@
 #pragma once
 #include"stack.h"
 
-char* line_edit(char*);
+char* line_edit(const char*);

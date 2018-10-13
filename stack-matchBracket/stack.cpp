@@ -15,7 +15,7 @@ status push(SStack* s, elem e) {
 	if (s->top - s->base >= s->size) {
 		s->base = (elem*)realloc(s,s->size + S_incr);
 		if (!s->base) exit(OVERFLOW);
-		//s->top = s->base + s->size;
+		s->top = s->base + s->size;
 		s->size += S_incr;
 	}
 	*s->top++ = e;
