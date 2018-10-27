@@ -21,6 +21,9 @@
     <ClInclude Include="lineEdit.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="bracket_match.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stack.cpp">
@@ -30,6 +33,9 @@
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="lineEdit.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="bracket_match.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

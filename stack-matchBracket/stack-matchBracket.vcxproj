@@ -115,10 +115,12 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="bracket_match.h" />
     <ClInclude Include="lineEdit.h" />
     <ClInclude Include="stack.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="bracket_match.cpp" />
     <ClCompile Include="lineEdit.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="stack.cpp" />

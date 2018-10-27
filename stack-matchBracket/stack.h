@@ -39,9 +39,6 @@ status destroy_stack(SStack s);
 int stack_length(SStack s);
 
 status print_stack(SStack s);
-//输入的括号字符串是否匹配
-bool bracket_match(const char* p);
-//判断a,b是否为一对括号
-bool is_match(char, char);
 
-void bracket_trim(char* p);
+
+void newline_trim(char* p);

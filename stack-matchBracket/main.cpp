@@ -1,24 +1,30 @@
 #include"stack.h"
 #include"lineEdit.h"
+#include"bracket_match.h"
 #include<Windows.h>
 
 int main() {
 	SStack s;
 	InitializeStack(&s);
 	char p[500];
-	//puts(line_edit("123#qqqsss"));
+	//puts(line_edit("asdasdh@123#qqqsss"));
 	//ø…“‘≤‚ ‘––±‡º≠
-	printf("%s\n", line_edit("##@123q@qqsssss111s#111##333"));
+	printf("––±‡º≠≤‚ ‘\n");
+	fgets(p, 2048, stdin);
+	//»•µÙfgets()¡Ù¥Êµƒªÿ≥µ
+	newline_trim(p);
+	printf("––±‡º≠Ω·π˚Œ™£∫%s\n", line_edit(p));
 	
 	//ø…“‘≤‚ ‘¿®∫≈∆•≈‰
-	/*fgets(p,2048,stdin);
+	printf("\n\n¿®∫≈∆•≈‰≤‚ ‘\n");
+	fgets(p,2048,stdin);
 	//»•µÙfgets()¡Ù¥Êµƒªÿ≥µ
-	bracket_trim(p);
+	newline_trim(p);
 	if (bracket_match(p)) {
-		puts("∆•≈‰≥…π¶£° ’ª“—ø’\n");
+		puts(" ’ª“—ø’ ∆•≈‰≥…π¶£°\n");
 	}
 	else {
-		puts("∆•≈‰ ß∞‹£°’ªŒ¥ø’£∫");
-	}*/
+		puts("’ªŒ¥ø’ ∆•≈‰ ß∞‹£°£∫\n");
+	}
 	system("pause");
 }
